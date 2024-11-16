@@ -77,7 +77,7 @@ function clientCode(creator: Creator) {
 
 In this example, `ConcreteCreatorA` and `ConcreteCreatorB` implement the `factoryMethod` to create different `Product` objects. The client uses `Creator`, but the actual product creation is handled by subclasses, promoting loose coupling.
 
-#### Real-World Examples in Pseudo Code
+### Real-World Examples in Pseudo Code
 
 - Transportation Booking System (e.g., Taxi, Bike, Bus)
 
