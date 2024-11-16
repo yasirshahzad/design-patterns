@@ -80,10 +80,257 @@ In this example, `ConcreteCreatorA` and `ConcreteCreatorB` implement the `factor
 #### Real-World Examples in Pseudo Code
 
 - Transportation Booking System (e.g., Taxi, Bike, Bus)
+
+```
+// Product Interface
+interface Transport {
+    book();
+}
+
+// Concrete Products
+class Taxi implements Transport {
+    book() {
+        // Booking process for taxi
+    }
+}
+
+class Bike implements Transport {
+    book() {
+        // Booking process for bike
+    }
+}
+
+// Creator
+abstract class TransportService {
+    createTransport(): Transport;
+
+    bookTransport() {
+        transport = this.createTransport();
+        transport.book();
+    }
+}
+
+// Concrete Creators
+class TaxiService extends TransportService {
+    createTransport(): Transport {
+        return new Taxi();
+    }
+}
+
+class BikeService extends TransportService {
+    createTransport(): Transport {
+        return new Bike();
+    }
+}
+
+// Client code
+function main(service: TransportService) {
+    service.bookTransport();
+}
+
+```
+
 - Document Creation (e.g., Word, PDF)
+
+```
+// Product Interface
+interface Document {
+    open();
+}
+
+// Concrete Products
+class WordDocument implements Document {
+    open() {
+        // Code to open a Word document
+    }
+}
+
+class PDFDocument implements Document {
+    open() {
+        // Code to open a PDF document
+    }
+}
+
+// Creator
+abstract class Application {
+    createDocument(): Document;
+
+    openDocument() {
+        document = this.createDocument();
+        document.open();
+    }
+}
+
+// Concrete Creators
+class WordApplication extends Application {
+    createDocument(): Document {
+        return new WordDocument();
+    }
+}
+
+class PDFApplication extends Application {
+    createDocument(): Document {
+        return new PDFDocument();
+    }
+}
+
+// Client code
+function main(app: Application) {
+    app.openDocument();
+}
+```
+
 - Food Delivery (e.g., Pizza, Sushi)
+
+```
+// Product Interface
+interface Food {
+    prepare();
+}
+
+// Concrete Products
+class Pizza implements Food {
+    prepare() {
+        // Preparation steps for Pizza
+    }
+}
+
+class Sushi implements Food {
+    prepare() {
+        // Preparation steps for Sushi
+    }
+}
+
+// Creator
+abstract class FoodDelivery {
+    createFood(): Food;
+
+    orderFood() {
+        food = this.createFood();
+        food.prepare();
+    }
+}
+
+// Concrete Creators
+class PizzaDelivery extends FoodDelivery {
+    createFood(): Food {
+        return new Pizza();
+    }
+}
+
+class SushiDelivery extends FoodDelivery {
+    createFood(): Food {
+        return new Sushi();
+    }
+}
+
+// Client code
+function main(delivery: FoodDelivery) {
+    delivery.orderFood();
+}
+```
+
 - Notification System (e.g., SMS, Email)
+
+```
+// Product Interface
+interface Notification {
+    send();
+}
+
+// Concrete Products
+class SMSNotification implements Notification {
+    send() {
+        // Code to send SMS notification
+    }
+}
+
+class EmailNotification implements Notification {
+    send() {
+        // Code to send email notification
+    }
+}
+
+// Creator
+abstract class NotificationService {
+    createNotification(): Notification;
+
+    notifyUser() {
+        notification = this.createNotification();
+        notification.send();
+    }
+}
+
+// Concrete Creators
+class SMSService extends NotificationService {
+    createNotification(): Notification {
+        return new SMSNotification();
+    }
+}
+
+class EmailService extends NotificationService {
+    createNotification(): Notification {
+        return new EmailNotification();
+    }
+}
+
+// Client code
+function main(service: NotificationService) {
+    service.notifyUser();
+}
+
+```
+
 - Payment Processing System (e.g., Credit Card, PayPal)
+
+```
+// Product Interface
+interface PaymentMethod {
+    process();
+}
+
+// Concrete Products
+class CreditCardPayment implements PaymentMethod {
+    process() {
+        // Processing steps for credit card payment
+    }
+}
+
+class PayPalPayment implements PaymentMethod {
+    process() {
+        // Processing steps for PayPal payment
+    }
+}
+
+// Creator
+abstract class PaymentProcessor {
+    createPaymentMethod(): PaymentMethod;
+
+    processPayment() {
+        paymentMethod = this.createPaymentMethod();
+        paymentMethod.process();
+    }
+}
+
+// Concrete Creators
+class CreditCardProcessor extends PaymentProcessor {
+    createPaymentMethod(): PaymentMethod {
+        return new CreditCardPayment();
+    }
+}
+
+class PayPalProcessor extends PaymentProcessor {
+    createPaymentMethod(): PaymentMethod {
+        return new PayPalPayment();
+    }
+}
+
+// Client code
+function main(processor: PaymentProcessor) {
+    processor.processPayment();
+}
+
+```
 
 Each of these examples follows the Factory Method pattern, where the base Creator (e.g., TransportService, Application, etc.) defines the method for creating an object, while specific subclasses decide what exact product to create. This provides flexibility and extensibility, making it easier to add new product types without altering the client code.
 
