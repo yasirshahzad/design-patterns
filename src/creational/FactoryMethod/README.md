@@ -24,6 +24,69 @@
 4. **Concrete Creator**  
    Subclasses of `Creator` that override the factory method to return instances of `Concrete Product`.
 
+## Basic Pseudo Code for Factory Method Pattern
+
+```
+// 1. Define a Product interface
+interface Product {
+    method();
+}
+
+// 2. Concrete Products implement the Product interface
+class ConcreteProductA implements Product {
+    method() {
+        // Implementation of method specific to ConcreteProductA
+    }
+}
+
+class ConcreteProductB implements Product {
+    method() {
+        // Implementation of method specific to ConcreteProductB
+    }
+}
+
+// 3. Creator declares the factory method
+abstract class Creator {
+    factoryMethod(): Product;
+
+    someOperation() {
+        // Call the factory method to create a Product object
+        product = this.factoryMethod();
+        product.method();
+    }
+}
+
+// 4. Concrete Creators implement the factory method
+class ConcreteCreatorA extends Creator {
+    factoryMethod(): Product {
+        return new ConcreteProductA();
+    }
+}
+
+class ConcreteCreatorB extends Creator {
+    factoryMethod(): Product {
+        return new ConcreteProductB();
+    }
+}
+
+// Client code
+function clientCode(creator: Creator) {
+    creator.someOperation();
+}
+```
+
+In this example, `ConcreteCreatorA` and `ConcreteCreatorB` implement the `factoryMethod` to create different `Product` objects. The client uses `Creator`, but the actual product creation is handled by subclasses, promoting loose coupling.
+
+#### Real-World Examples in Pseudo Code
+
+- Transportation Booking System (e.g., Taxi, Bike, Bus)
+- Document Creation (e.g., Word, PDF)
+- Food Delivery (e.g., Pizza, Sushi)
+- Notification System (e.g., SMS, Email)
+- Payment Processing System (e.g., Credit Card, PayPal)
+
+Each of these examples follows the Factory Method pattern, where the base Creator (e.g., TransportService, Application, etc.) defines the method for creating an object, while specific subclasses decide what exact product to create. This provides flexibility and extensibility, making it easier to add new product types without altering the client code.
+
 ### Benefits
 
 - **Loose Coupling**: The client code depends on abstractions rather than concrete classes.
@@ -70,13 +133,13 @@
    Potential over-complexity, readability issues, and additional overhead with extra classes.
 
 8. **How would you implement the Factory Method pattern in TypeScript (or any specific language)?**  
-   Be ready to discuss language-specific features, such as TypeScript’s abstract classes and interfaces.
+   Be ready to discuss language-specific features, such as TypeScript's abstract classes and interfaces.
 
 9. **How would you convert a simple Factory Method implementation to support multiple product families?**  
-   Explain how to evolve the Factory Method pattern into an Abstract Factory if there’s a need for product families, e.g., different types of notifications across various communication channels.
+   Explain how to evolve the Factory Method pattern into an Abstract Factory if there's a need for product families, e.g., different types of notifications across various communication channels.
 
 10. **What are some alternatives to the Factory Method pattern?**  
-    Alternatives include simple factory functions, dependency injection, or Prototype patterns for cases where object creation doesn’t require much flexibility.
+    Alternatives include simple factory functions, dependency injection, or Prototype patterns for cases where object creation doesn't require much flexibility.
 
 ---
 
