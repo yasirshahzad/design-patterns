@@ -8,7 +8,7 @@ interface Tyre {
   inflate(): void;
 }
 
-interface AbstractFactory {
+interface CarFactory {
   createEngine(): Engine;
   createTyre(): Tyre;
 }
@@ -43,7 +43,7 @@ class SedanEngine implements Engine {
   }
 }
 
-class SUVFactory implements AbstractFactory {
+class SUVFactory implements CarFactory {
   createEngine(): Engine {
     return new SUVEngine();
   }
@@ -52,7 +52,7 @@ class SUVFactory implements AbstractFactory {
   }
 }
 
-class SedanFactory implements AbstractFactory {
+class SedanFactory implements CarFactory {
   createEngine(): Engine {
     return new SedanEngine();
   }
@@ -60,3 +60,26 @@ class SedanFactory implements AbstractFactory {
     return new SedansTyre();
   }
 }
+class Car {
+  private engine: Engine;
+  private tires: Tyre;
+
+  constructor(factory: CarFactory) {
+    this.engine = factory.createEngine();
+    this.tires = factory.createTyre();
+  }
+
+  assemble() {
+    this.tires.inflate();
+    this.engine.start();
+  }
+}
+
+// Usage
+const suvFactory = new SUVFactory();
+const suvCar = new Car(suvFactory);
+suvCar.assemble();
+
+const sedanFactory = new SedanFactory();
+const sedanCar = new Car(sedanFactory);
+sedanCar.assemble();

@@ -63,7 +63,7 @@ class DarkFactory implements UIFactory {
   }
 }
 
-export default function AbstractFactory({}: Props) {
+export default function AbstractFactory() {
   const [dark, setDark] = useState(false);
   const [factory, setFactory] = useState<UIFactory>(new LightFactory());
 
