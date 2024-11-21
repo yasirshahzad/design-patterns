@@ -1,9 +1,9 @@
-import FactoryMethod from "./creational/FactoryMethod/FactoryMethod";
+import AbstractFactory from "./creational/AbstractFactory/AbstractFactory";
 
 function App() {
   return (
     <>
-      <FactoryMethod />
+      <AbstractFactory />
     </>
   );
 }
