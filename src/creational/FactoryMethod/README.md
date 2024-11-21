@@ -13,7 +13,7 @@
 - When the exact types of objects to be created are determined at runtime.
 - When you want to delegate the responsibility of object creation to subclasses.
 
-### Components
+### Key Components
 
 1. **Product**  
    The interface or abstract class that defines the type of objects the factory method creates.
@@ -75,265 +75,6 @@ function clientCode(creator: Creator) {
 }
 ```
 
-In this example, `ConcreteCreatorA` and `ConcreteCreatorB` implement the `factoryMethod` to create different `Product` objects. The client uses `Creator`, but the actual product creation is handled by subclasses, promoting loose coupling.
-
-### Real-World Examples in Pseudo Code
-
-- Transportation Booking System (e.g., Taxi, Bike, Bus)
-
-```
-// Product Interface
-interface Transport {
-    book();
-}
-
-// Concrete Products
-class Taxi implements Transport {
-    book() {
-        // Booking process for taxi
-    }
-}
-
-class Bike implements Transport {
-    book() {
-        // Booking process for bike
-    }
-}
-
-// Creator
-abstract class TransportService {
-    createTransport(): Transport;
-
-    bookTransport() {
-        transport = this.createTransport();
-        transport.book();
-    }
-}
-
-// Concrete Creators
-class TaxiService extends TransportService {
-    createTransport(): Transport {
-        return new Taxi();
-    }
-}
-
-class BikeService extends TransportService {
-    createTransport(): Transport {
-        return new Bike();
-    }
-}
-
-// Client code
-function main(service: TransportService) {
-    service.bookTransport();
-}
-
-```
-
-- Document Creation (e.g., Word, PDF)
-
-```
-// Product Interface
-interface Document {
-    open();
-}
-
-// Concrete Products
-class WordDocument implements Document {
-    open() {
-        // Code to open a Word document
-    }
-}
-
-class PDFDocument implements Document {
-    open() {
-        // Code to open a PDF document
-    }
-}
-
-// Creator
-abstract class Application {
-    createDocument(): Document;
-
-    openDocument() {
-        document = this.createDocument();
-        document.open();
-    }
-}
-
-// Concrete Creators
-class WordApplication extends Application {
-    createDocument(): Document {
-        return new WordDocument();
-    }
-}
-
-class PDFApplication extends Application {
-    createDocument(): Document {
-        return new PDFDocument();
-    }
-}
-
-// Client code
-function main(app: Application) {
-    app.openDocument();
-}
-```
-
-- Food Delivery (e.g., Pizza, Sushi)
-
-```
-// Product Interface
-interface Food {
-    prepare();
-}
-
-// Concrete Products
-class Pizza implements Food {
-    prepare() {
-        // Preparation steps for Pizza
-    }
-}
-
-class Sushi implements Food {
-    prepare() {
-        // Preparation steps for Sushi
-    }
-}
-
-// Creator
-abstract class FoodDelivery {
-    createFood(): Food;
-
-    orderFood() {
-        food = this.createFood();
-        food.prepare();
-    }
-}
-
-// Concrete Creators
-class PizzaDelivery extends FoodDelivery {
-    createFood(): Food {
-        return new Pizza();
-    }
-}
-
-class SushiDelivery extends FoodDelivery {
-    createFood(): Food {
-        return new Sushi();
-    }
-}
-
-// Client code
-function main(delivery: FoodDelivery) {
-    delivery.orderFood();
-}
-```
-
-- Notification System (e.g., SMS, Email)
-
-```
-// Product Interface
-interface Notification {
-    send();
-}
-
-// Concrete Products
-class SMSNotification implements Notification {
-    send() {
-        // Code to send SMS notification
-    }
-}
-
-class EmailNotification implements Notification {
-    send() {
-        // Code to send email notification
-    }
-}
-
-// Creator
-abstract class NotificationService {
-    createNotification(): Notification;
-
-    notifyUser() {
-        notification = this.createNotification();
-        notification.send();
-    }
-}
-
-// Concrete Creators
-class SMSService extends NotificationService {
-    createNotification(): Notification {
-        return new SMSNotification();
-    }
-}
-
-class EmailService extends NotificationService {
-    createNotification(): Notification {
-        return new EmailNotification();
-    }
-}
-
-// Client code
-function main(service: NotificationService) {
-    service.notifyUser();
-}
-
-```
-
-- Payment Processing System (e.g., Credit Card, PayPal)
-
-```
-// Product Interface
-interface PaymentMethod {
-    process();
-}
-
-// Concrete Products
-class CreditCardPayment implements PaymentMethod {
-    process() {
-        // Processing steps for credit card payment
-    }
-}
-
-class PayPalPayment implements PaymentMethod {
-    process() {
-        // Processing steps for PayPal payment
-    }
-}
-
-// Creator
-abstract class PaymentProcessor {
-    createPaymentMethod(): PaymentMethod;
-
-    processPayment() {
-        paymentMethod = this.createPaymentMethod();
-        paymentMethod.process();
-    }
-}
-
-// Concrete Creators
-class CreditCardProcessor extends PaymentProcessor {
-    createPaymentMethod(): PaymentMethod {
-        return new CreditCardPayment();
-    }
-}
-
-class PayPalProcessor extends PaymentProcessor {
-    createPaymentMethod(): PaymentMethod {
-        return new PayPalPayment();
-    }
-}
-
-// Client code
-function main(processor: PaymentProcessor) {
-    processor.processPayment();
-}
-
-```
-
-Each of these examples follows the Factory Method pattern, where the base Creator (e.g., TransportService, Application, etc.) defines the method for creating an object, while specific subclasses decide what exact product to create. This provides flexibility and extensibility, making it easier to add new product types without altering the client code.
-
 ### Benefits
 
 - **Loose Coupling**: The client code depends on abstractions rather than concrete classes.
@@ -347,9 +88,18 @@ Each of these examples follows the Factory Method pattern, where the base Creato
 
 ### Examples in Real-World Applications
 
-- **Logging Frameworks**: Different logging providers (e.g., console, file, database) can be created via factory methods.
-- **Database Connections**: Instantiating connections to different databases (e.g., MySQL, PostgreSQL) based on configuration.
-- **UI Libraries**: Creating different UI elements (e.g., buttons, text boxes) based on the platform (web, mobile).
+- **Scenario 1: Database Connections**: You have multiple database engines (MySQL, MongoDB, PostgreSQL). Use the factory method to dynamically choose which database client to connect to.
+- **Scenario 2: Game Development**: In a game, you have different enemy types (e.g., Orcs, Trolls, Dragons). Use the factory method to create enemies dynamically based on game level.
+- **Scenario 3: File Parsers**: Create parsers for different file formats (JSON, XML, CSV). Depending on the file extension, the factory method returns the correct parser implementation.
+- **Scenario 4: UI Components**: Generate platform-specific UI components (e.g., Windows buttons, macOS buttons). The factory method creates components based on the platform.
+
+---
+
+## Practice Exercise
+
+1. **Implement the Factory Method for a transportation system:** E.g., Car, Bike, or Bus based on travel distance.
+2. **Create an e-commerce product display system:** Dynamically generate different product views (e.g., list view, grid view).
+3. **Build a logging system:** Log to console, file, or remote server depending on configuration.
 
 ---
 
