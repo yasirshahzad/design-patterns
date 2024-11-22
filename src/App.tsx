@@ -1,9 +1,9 @@
-import AbstractFactory from "./creational/AbstractFactory/AbstractFactory";
+import BuilderPattern from "./creational/BuilderPattern/BuilderPattern";
 
 function App() {
   return (
     <>
-      <AbstractFactory />
+      <BuilderPattern />
     </>
   );
 }

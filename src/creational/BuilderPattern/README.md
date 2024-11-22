@@ -16,7 +16,15 @@ Sometimes, making a big or complex object (like a pizza, a car, or a house) has 
 
 ---
 
+## When to Use
+
+- **Complex Objects:** When constructing objects requires multiple steps or involves conditional logic.
+- **Multiple Representations:** When you want the same building process to produce different types or versions of the product.
+- **Code Reusability:** To encapsulate complex construction logic in a single class.
+
 ## Components
+
+---
 
 Here's how it works, step by step:
 
@@ -25,14 +33,6 @@ Here's how it works, step by step:
 - **Concrete Builder:** This is the actual worker who follows the plan to build the product.
 - **Director:** This is like the "manager" who tells the builder which steps to follow and in what order.
 - **Client:** This is you! You just tell the manager (Director) what you want, and they handle everything else.
-
----
-
-## When to Use
-
-- **Complex Objects:** When constructing objects requires multiple steps or involves conditional logic.
-- **Multiple Representations:** When you want the same building process to produce different types or versions of the product.
-- **Code Reusability:** To encapsulate complex construction logic in a single class.
 
 ---
 
@@ -60,7 +60,7 @@ class Pizza {
   }
 }
 
-// 2. Builder Interface
+// 2. Builder Interface/abstraction
 interface PizzaBuilder {
   setCrust(crust: string): this;
   setSize(size: string): this;
