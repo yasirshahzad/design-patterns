@@ -1,9 +1,9 @@
-import BuilderPattern from "./creational/BuilderPattern/BuilderPattern";
+import SingletonPattern from "./creational/SingletonPattern/SingletonPattern";
 
 function App() {
   return (
     <>
-      <BuilderPattern />
+      <SingletonPattern />
     </>
   );
 }
