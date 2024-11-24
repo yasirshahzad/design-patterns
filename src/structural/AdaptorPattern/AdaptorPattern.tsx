@@ -1,7 +1,3 @@
-import React from "react";
-
-type Props = {};
-
-export default function AdaptorPattern({}: Props) {
+export default function AdaptorPattern() {
   return <div>AdpatorPattern</div>;
 }
