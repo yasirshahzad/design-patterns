@@ -1,9 +1,9 @@
-import SingletonPattern from "./creational/SingletonPattern/SingletonPattern";
+import PrototypePattern from "./creational/Prototype/PrototypePattern";
 
 function App() {
   return (
     <>
-      <SingletonPattern />
+      <PrototypePattern />
     </>
   );
 }
