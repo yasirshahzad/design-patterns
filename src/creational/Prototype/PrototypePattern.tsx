@@ -5,7 +5,7 @@ interface Cloneable {
 }
 
 // Base Class
-class MapFeature implements Cloneable {
+class PlacementOnMap implements Cloneable {
   protected x: number;
   protected y: number;
 
@@ -33,7 +33,7 @@ class MapFeature implements Cloneable {
 }
 
 // Subclass: Tree
-class Tree extends MapFeature {
+class Tree extends PlacementOnMap {
   private name: string;
   private height: number;
 
@@ -49,7 +49,7 @@ class Tree extends MapFeature {
 }
 
 // Subclass: Building
-class Building extends MapFeature {
+class Building extends PlacementOnMap {
   private name: string;
   private floors: number;
 
@@ -65,7 +65,7 @@ class Building extends MapFeature {
 }
 
 // Subclass: Road
-class Road extends MapFeature {
+class Road extends PlacementOnMap {
   private length: number;
 
   constructor(length: number, x: number, y: number) {
