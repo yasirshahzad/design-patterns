@@ -8,8 +8,7 @@ The **Chain of Responsibility** is a behavioral design pattern that allows you t
 
 1. Handler Interface:
     Defines a method to handle the request and a way to set the next handler in the chain.
-Concrete Handlers:
-Implement the handler interface.
-Process the request if they can; otherwise, pass it to the next handler.
-Client:
-Creates the chain and sends the request to the first handler.
+2. Concrete Handlers:
+    Implement the handler interface. Process the request if they can; otherwise, pass it to the next handler.
+3. Client:
+    Creates the chain and sends the request to the first handler.
