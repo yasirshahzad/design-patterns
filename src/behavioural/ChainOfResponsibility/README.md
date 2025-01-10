@@ -12,3 +12,4 @@ The **Chain of Responsibility** is a behavioral design pattern that allows you t
     Implement the handler interface. Process the request if they can; otherwise, pass it to the next handler.
 3. Client:
     Creates the chain and sends the request to the first handler.
+4. Something
