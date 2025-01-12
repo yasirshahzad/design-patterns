@@ -1,27 +1,57 @@
-interface Request { username: string, password: string };
-
-interface IHandler {
-    handle: (request: Request) => IHandler;
-}
-
-abstract class Hanlder implements IHandler {
-    private next: Hanlder | null = null;
+interface IRequest { username: string, password: string };
 
 
-    public setNext(handler: Hanlder): Hanlder {
+abstract class Handler {
+    private next: Handler | null = null;
+
+    public setNext(handler: Handler): Handler {
         this.next = handler;
         return handler;
     }
 
-    public handleNext(request: Request) {
-        if (this.next == null) {
-            return true;
+    protected handleNext(request: IRequest): boolean {
+        // Forward the request to the next handler if it exists
+        if (this.next) {
+            return this.next.handle(request); // Fix: Call `next.handle` instead of `this.handle`
         }
 
-        return this.handle(request);
+        // No more handlers in the chain
+        return true;
     }
 
-    public abstract handle(request: Request): IHandler;
-
-
+    public abstract handle(request: IRequest): boolean;
 }
+
+
+
+class LoginHandler extends Handler {
+    public handle(request: IRequest) {
+        if (request.username !== 'admin' || request.password !== '1234') {
+            console.log('Login failed');
+            return false;
+        } else {
+            console.log('Login Success');
+            return super.handleNext(request);
+        }
+    }
+}
+
+class AdminHandler extends Handler {
+    public handle(request: IRequest) {
+        if (request.username !== 'admin') {
+            console.log('User is not admin');
+            return false;
+        } else {
+            console.log('Admin access granted');
+            return super.handleNext(request);
+        }
+    }
+}
+
+
+const baseHandler = new LoginHandler().setNext(new AdminHandler());
+baseHandler.handle({ username: 'admin', password: '1234' });
+
+
+
+
