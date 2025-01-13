@@ -21,7 +21,7 @@
 
 ## Categories of Design Patterns
 
-Design patterns are grouped into three main categories based on what they solve and how they help in structuring your code. Here’s a breakdown with simple explanations and examples:
+Design patterns are grouped into three main categories based on what they solve and how they help in structuring your code. Here's a breakdown with simple explanations and examples:
 
 ### 1. **Creational Patterns**
 
@@ -68,3 +68,44 @@ These patterns focus on **how objects and classes are organized** to form larger
 6. **Proxy:** Provides a placeholder or surrogate to control access to another object. For example, a credit card acting as a proxy for your bank account.
 
 7. **Flyweight:** Reduces memory usage by sharing common data between multiple objects. For example, a text editor reusing character objects for common letters.
+
+### **2. Behavioral Patterns:**
+
+These patterns focus on **how objects interact and communicate.** They define responsibilities and improve collaboration between objects.
+
+**Key Features:**
+
+- Handle communication and responsibility between objects.
+- Ensure flexible and reusable interactions.
+
+#### **Behavioral Patterns:**
+
+1. **Observer:** Allows one object (subject) to notify multiple objects (observers) about changes. For example, a weather app where multiple users get updates when the weather changes.
+
+2. **Strategy:** Lets you choose a specific algorithm or behavior at runtime. For example, different payment methods (credit card, PayPal) in an e-commerce site.
+
+3. **Command:** Encapsulates a request as an object, allowing you to store and execute it later. For example, an "Undo" feature in a text editor.
+
+4. **Chain of Responsibility:** Passes a request along a chain of handlers until one handles it. For example, customer service, where different levels (agent, manager) handle complaints.
+
+5. **Mediator:** Centralizes communication between objects, reducing direct dependencies. For example, a chat room where users don't communicate directly but through the chat room.
+
+6. **State:** Allows an object to alter its behavior when its state changes. For example, a document that behaves differently when it is in draft, review, or published state.
+
+7. **Template Method:** Defines the skeleton of an algorithm and lets subclasses fill in the details. For example, a cooking recipe template where specific ingredients vary.
+
+8. **Visitor:** Lets you add new behaviors to existing objects without changing their structure. For example, a tax calculator that works on different types of accounts (business, personal).
+
+9. **Interpreter:** Defines a way to evaluate or interpret a language. For example, a calculator that interprets mathematical expressions.
+
+10. **Iterator:** Provides a way to access elements of a collection sequentially without exposing its structure. For example, Browsing a playlist in a music app or viewing in Facebook feed.
+
+---
+
+## Summary of Categories
+
+1. **Creational:** Focuses on creating objects (what to make and how to make it).
+2. **Structural:** Focuses on organizing objects (how they are connected).
+3. **Behavioral:** Focuses on how objects interact and work together.
+
+Each category solves specific design problems, helping you write cleaner, more efficient, and maintainable code.
