@@ -34,15 +34,15 @@ These patterns focus on **how objects are created**. They provide ways to create
 
 #### **Creational Patterns:**
 
-1. **Singleton:** Ensures only one instance of a class exists throughout the application. For an instance, a single database connection shared by the whole app. [Read more.](/blob/main/creational/SingletonPattern/README.md)
+1. **Singleton:** Ensures only one instance of a class exists throughout the application. For an instance, a single database connection shared by the whole app. [Read more.](creational/SingletonPattern/README.md)
 
-2. **Factory Method:** Provides a way to create objects without specifying the exact class. For an instance, a shape factory that creates circles, squares, or triangles based on input. [Read more.](/blob/main/creational/FactoryMethod/README.md)
+2. **Factory Method:** Provides a way to create objects without specifying the exact class. For an instance, a shape factory that creates circles, squares, or triangles based on input. [Read more.](creational/FactoryMethod/README.md)
 
-3. **Abstract Factory:** Creates families of related objects without specifying their concrete classes. For an instance, a factory for UI components like buttons and checkboxes that can produce Windows-style or Mac-style components. [Read more.](/blob/main/creational/AbstractFactory/README.md)
+3. **Abstract Factory:** Creates families of related objects without specifying their concrete classes. For an instance, a factory for UI components like buttons and checkboxes that can produce Windows-style or Mac-style components. [Read more.](creational/AbstractFactory/README.md)
 
-4. **Builder:** Constructs complex objects step by step, often with a fluent interface. For example, building a custom pizza by choosing toppings, size, and crust type. [Read more.](/blob/main/creational/Builder/README.md)
+4. **Builder:** Constructs complex objects step by step, often with a fluent interface. For example, building a custom pizza by choosing toppings, size, and crust type. [Read more.](creational/Builder/README.md)
 
-5. **Prototype:** Creates new objects by copying existing ones. For example, cloning a character in a game with the same properties. [Read more.](/blob/main/creational/Prototype/README.md)
+5. **Prototype:** Creates new objects by copying existing ones. For example, cloning a character in a game with the same properties. [Read more.](creational/Prototype/README.md)
 
 ### **2. Structural Patterns:**
 
@@ -55,19 +55,19 @@ These patterns focus on **how objects and classes are organized** to form larger
 
 #### **Structural Patterns:**
 
-1. **Adapter:** Helps incompatible interfaces work together. For example, a power adapter that allows an American plug to work in a European socket. [Read more.](/blob/main/structural/AdaptorPattern/README.md)
+1. **Adapter:** Helps incompatible interfaces work together. For example, a power adapter that allows an American plug to work in a European socket. [Read more.](structural/AdaptorPattern/README.md)
 
-2. **Bridge:** Separates an abstraction from its implementation so they can vary independently. For example, A drawing application where shapes (abstraction) can be drawn using different devices (implementations like a printer or screen). [Read more.](/blob/main/structural/BridgePattern/README.md)
+2. **Bridge:** Separates an abstraction from its implementation so they can vary independently. For example, A drawing application where shapes (abstraction) can be drawn using different devices (implementations like a printer or screen). [Read more.](structural/BridgePattern/README.md)
 
-3. **Composite:** Lets you treat a group of objects like a single object. For example, folder containing files and other folders in a file system. [Read more.](/blob/main/structural/CompositePattern/README.md)
+3. **Composite:** Lets you treat a group of objects like a single object. For example, folder containing files and other folders in a file system. [Read more.](structural/CompositePattern/README.md)
 
-4. **Decorator:** Dynamically adds new behaviors to objects without altering their structure. For example, Adding scrollbars or borders to a window in a graphical user interface. [Read more.](/blob/main/structural/DecoratorPattern/README.md)
+4. **Decorator:** Dynamically adds new behaviors to objects without altering their structure. For example, Adding scrollbars or borders to a window in a graphical user interface. [Read more.](structural/DecoratorPattern/README.md)
 
-5. **Facade:** Provides a simplified interface to a complex subsystem. For example, a universal remote control that operates multiple devices with a single interface. [Read more.](/blob/main/structural/FacadePattern/README.md)
+5. **Facade:** Provides a simplified interface to a complex subsystem. For example, a universal remote control that operates multiple devices with a single interface. [Read more.](structural/FacadePattern/README.md)
 
-6. **Proxy:** Provides a placeholder or surrogate to control access to another object. For example, a credit card acting as a proxy for your bank account. [Read more.](/blob/main/structural/ProxyPattern/README.md)
+6. **Proxy:** Provides a placeholder or surrogate to control access to another object. For example, a credit card acting as a proxy for your bank account. [Read more.](structural/ProxyPattern/README.md)
 
-7. **Flyweight:** Reduces memory usage by sharing common data between multiple objects. For example, a text editor reusing character objects for common letters. [Read more.](/blob/main/structural/FlyweightPattern/README.md)
+7. **Flyweight:** Reduces memory usage by sharing common data between multiple objects. For example, a text editor reusing character objects for common letters. [Read more.](structural/FlyweightPattern/README.md)
 
 ### **2. Behavioral Patterns:**
 
@@ -80,23 +80,23 @@ These patterns focus on **how objects interact and communicate.** They define re
 
 #### **Behavioral Patterns:**
 
-1. **Observer:** Allows one object (subject) to notify multiple objects (observers) about changes. For example, a weather app where multiple users get updates when the weather changes. [Read more.](/blob/main/behavioural/ObserverPattern/README.md)
+1. **Observer:** Allows one object (subject) to notify multiple objects (observers) about changes. For example, a weather app where multiple users get updates when the weather changes. [Read more.](behavioural/ObserverPattern/README.md)
 
-2. **Strategy:** Lets you choose a specific algorithm or behavior at runtime. For example, different payment methods (credit card, PayPal) in an e-commerce site. [Read more.](/blob/main/behavioural/StrategyPattern/README.md)
+2. **Strategy:** Lets you choose a specific algorithm or behavior at runtime. For example, different payment methods (credit card, PayPal) in an e-commerce site. [Read more.](behavioural/StrategyPattern/README.md)
 
-3. **Command:** Encapsulates a request as an object, allowing you to store and execute it later. For example, an "Undo" feature in a text editor. [Read more.](/blob/main/behavioural/CommandPattern/README.md)
+3. **Command:** Encapsulates a request as an object, allowing you to store and execute it later. For example, an "Undo" feature in a text editor. [Read more.](behavioural/CommandPattern/README.md)
 
-4. **Chain of Responsibility:** Passes a request along a chain of handlers until one handles it. For example, customer service, where different levels (agent, manager) handle complaints. [Read more.](/blob/main/behavioural/ChainOfResponsibility/README.md)
+4. **Chain of Responsibility:** Passes a request along a chain of handlers until one handles it. For example, customer service, where different levels (agent, manager) handle complaints. [Read more.](behavioural/ChainOfResponsibility/README.md)
 
-5. **Mediator:** Centralizes communication between objects, reducing direct dependencies. For example, a chat room where users don't communicate directly but through the chat room. [Read more.](/blob/main/behavioural/MediatorPattern/README.md)
+5. **Mediator:** Centralizes communication between objects, reducing direct dependencies. For example, a chat room where users don't communicate directly but through the chat room. [Read more.](behavioural/MediatorPattern/README.md)
 
-6. **State:** Allows an object to alter its behavior when its state changes. For example, a document that behaves differently when it is in draft, review, or published state. [Read more.](/blob/main/behavioural/State/README.md)
+6. **State:** Allows an object to alter its behavior when its state changes. For example, a document that behaves differently when it is in draft, review, or published state. [Read more.](behavioural/State/README.md)
 
-7. **Template Method:** Defines the skeleton of an algorithm and lets subclasses fill in the details. For example, a cooking recipe template where specific ingredients vary. [Read more.](/blob/main/behavioural/TemplateMethod/README.md)
+7. **Template Method:** Defines the skeleton of an algorithm and lets subclasses fill in the details. For example, a cooking recipe template where specific ingredients vary. [Read more.](behavioural/TemplateMethod/README.md)
 
-8. **Visitor:** Lets you add new behaviors to existing objects without changing their structure. For example, a tax calculator that works on different types of accounts (business, personal). [Read more.](/blob/main/behavioural/VisitorPattern/README.md)
+8. **Visitor:** Lets you add new behaviors to existing objects without changing their structure. For example, a tax calculator that works on different types of accounts (business, personal). [Read more.](behavioural/VisitorPattern/README.md)
 
-9. **Iterator:** Provides a way to access elements of a collection sequentially without exposing its structure. For example, Browsing a playlist in a music app or viewing in Facebook feed. [Read more.](/blob/main/behavioural/IteratorPattern/README.md)
+9. **Iterator:** Provides a way to access elements of a collection sequentially without exposing its structure. For example, Browsing a playlist in a music app or viewing in Facebook feed. [Read more.](behavioural/IteratorPattern/README.md)
 
 ---
 
