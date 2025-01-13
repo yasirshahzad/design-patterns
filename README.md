@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Design Pattern Preparation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Design patterns** are tried and tested solutions to common problems in software design. They act like templates or guides to help developers solve issues they frequently face while writing code. Instead of figuring out everything from scratch, you can use a design pattern to handle common situations effectively. They are like blueprints that provide templates for solving specific design issues, making it easier for developers to write flexible, reusable, and maintainable code. Instead of reinventing the wheel, developers can apply design patterns to address common challenges effectively.
 
-Currently, two official plugins are available:
+## Why are Design Patterns Important?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Save Time and Effort**
+   You don't need to reinvent the wheel. Patterns provide ready-made solutions that work well.
 
-## Expanding the ESLint configuration
+2. **Make Code Easier to Understand**
+   Using patterns gives your code a clear structure, making it easier for others (and you!) to read and understand later.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Encourage Reusable Solutions**
+   Patterns can be used in different projects, saving time and improving consistency.
 
-- Configure the top-level `parserOptions` property like this:
+4. **Improve Team Communication**
+   Developers often use pattern names like "Singleton" or "Observer." These names explain complex ideas quickly without long explanations.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+5. **Help Build Better Software**
+   Patterns guide you to write flexible, scalable, and maintainable code, reducing bugs and making future updates easier.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+## Categories of Design Patterns
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+Design patterns are grouped into three main categories based on what they solve and how they help in structuring your code. Here’s a breakdown with simple explanations and examples:
+
+### 1. **Creational Patterns**
+
+These patterns focus on **how objects are created**. They provide ways to create objects while hiding the complexity of the creation process and ensuring the created objects are appropriate for the situation. 
+
+**Key Features:**
+
+- Deal with object creation.
+- Help make systems independent of how objects are constructed.
+
+**Common Creational Patterns:**
+
+1. **Singleton:** Ensures only one instance of a class exists throughout the application. For an instance, a single database connection shared by the whole app.
+
+2. **Factory Method:** Provides a way to create objects without specifying the exact class. For an instance, a shape factory that creates circles, squares, or triangles based on input.
+
+3. **Abstract Factory:** Creates families of related objects without specifying their concrete classes. For an instance, a factory for UI components like buttons and checkboxes that can produce Windows-style or Mac-style components.
+
+4. **Builder:** Constructs complex objects step by step, often with a fluent interface. For example, building a custom pizza by choosing toppings, size, and crust type.
+
+5. **Prototype:** Creates new objects by copying existing ones. For example, cloning a character in a game with the same properties.
