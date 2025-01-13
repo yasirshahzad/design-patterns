@@ -4,13 +4,13 @@
 
 The Flyweight pattern is a structural design pattern that reduces memory usage by sharing common parts of objects instead of storing them repeatedly. It ensures efficient object management, especially when creating a large number of similar objects.
 
----
+
 
 ### Intent
 
 To minimize memory consumption and improve performance by sharing as much data as possible among objects, especially when objects are numerous and resource-intensive to instantiate.
 
----
+
 
 ### Components
 
@@ -24,7 +24,7 @@ To minimize memory consumption and improve performance by sharing as much data a
 
 5. **Client:** Uses Flyweight objects and provides the extrinsic state when needed.
 
----
+
 
 ### When to Use
 
@@ -33,7 +33,7 @@ To minimize memory consumption and improve performance by sharing as much data a
 2. Objects can have a shared intrinsic state (common data) and a unique extrinsic state (context-specific data).
 3. Examples include graphical elements in a game, font rendering, or caching repeated data.
 
----
+
 
 ### TypeScript Code Example
 
@@ -98,7 +98,7 @@ Rendering character 'l' with font 'Arial' at (40, 20)
 Rendering character 'o' with font 'Arial' at (50, 20)
 ```
 
----
+
 
 ### Key Takeaways
 

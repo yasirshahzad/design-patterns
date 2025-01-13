@@ -93,7 +93,7 @@ function clientCode(creator: Creator) {
 - **Scenario 3: File Parsers**: Create parsers for different file formats (JSON, XML, CSV). Depending on the file extension, the factory method returns the correct parser implementation.
 - **Scenario 4: UI Components**: Generate platform-specific UI components (e.g., Windows buttons, macOS buttons). The factory method creates components based on the platform.
 
----
+
 
 ## Practice Exercise
 
@@ -101,7 +101,7 @@ function clientCode(creator: Creator) {
 2. **Create an e-commerce product display system:** Dynamically generate different product views (e.g., list view, grid view).
 3. **Build a logging system:** Log to console, file, or remote server depending on configuration.
 
----
+
 
 ## Common Interview Questions on the Factory Method Pattern
 
@@ -138,7 +138,7 @@ function clientCode(creator: Creator) {
 10. **What are some alternatives to the Factory Method pattern?**  
     Alternatives include simple factory functions, dependency injection, or Prototype patterns for cases where object creation doesn't require much flexibility.
 
----
+
 
 ## Tips for Answering Interview Questions
 

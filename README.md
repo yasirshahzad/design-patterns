@@ -98,8 +98,6 @@ These patterns focus on **how objects interact and communicate.** They define re
 
 9. **Iterator:** Provides a way to access elements of a collection sequentially without exposing its structure. For example, Browsing a playlist in a music app or viewing in Facebook feed. [Read more.](behavioural/IteratorPattern/README.md)
 
----
-
 ## Summary of Categories
 
 1. **Creational:** Focuses on creating objects (what to make and how to make it).

@@ -4,7 +4,7 @@
 
 The Singleton pattern ensures that a class has only **one instance** and provides a **global access point** to that instance.
 
----
+
 
 ## Intent
 
@@ -12,7 +12,7 @@ The Singleton pattern ensures that a class has only **one instance** and provide
 - To **control shared resources** (like database connections or configuration settings) efficiently.
 - To provide **one centralized point of access** to a particular service or resource.
 
----
+
 
 ## Components
 
@@ -23,7 +23,7 @@ The Singleton pattern ensures that a class has only **one instance** and provide
 3. **Public Accessor Method**  
    Provides a controlled way to access the single instance, often called `getInstance()`.
 
----
+
 
 ## When to Use
 
@@ -34,7 +34,7 @@ The Singleton pattern ensures that a class has only **one instance** and provide
 - **Controlled Access**  
   When the control of instance creation is critical, like managing thread safety in multi-threaded environments.
 
----
+
 
 ## Code Example
 
@@ -66,7 +66,7 @@ singleton1.logMessage("Singleton instance works!");
 console.log(singleton1 === singleton2); // true
 ```
 
----
+
 
 ## Key Scenarios
 

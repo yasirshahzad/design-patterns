@@ -6,7 +6,7 @@ The Command Pattern encapsulates a request as an object, allowing you to paramet
 
 It ***decouples*** the sender (who requests the action) from the receiver (who performs the action)
 
----
+
 
 ## Key Components
 
@@ -16,7 +16,7 @@ It ***decouples*** the sender (who requests the action) from the receiver (who p
 4. **Invoker:** Holds a command and triggers its execution.
 5. **Client:** Creates concrete command objects and assigns them to the invoker.
 
----
+
 
 ## Intent
 
@@ -24,7 +24,7 @@ It ***decouples*** the sender (who requests the action) from the receiver (who p
 - To enable undo/redo functionality.
 - To support queuing and scheduling requests.
 
----
+
 
 ## Scenario 1: Home Automation System
 

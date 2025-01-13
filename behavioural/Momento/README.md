@@ -2,7 +2,7 @@
 
 The Memento Pattern is a behavioral design pattern that provides a way to capture and restore an object's internal state without exposing its implementation details. This is useful for implementing undo/redo functionality.
 
----
+
 
 ## Key Components
 

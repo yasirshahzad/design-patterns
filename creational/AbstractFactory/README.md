@@ -2,7 +2,7 @@
 
 The Abstract Factory pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
----
+
 
 **Key Points to Memorize:**
 
@@ -26,7 +26,7 @@ The Abstract Factory pattern is a creational design pattern that provides an int
 2. You want to enforce product consistency across a family.
 3. The system should be independent of how the products are created.
 
----
+
 
 ## **Practice Example: GUI Toolkit**
 
@@ -83,7 +83,7 @@ class Client {
 }
 ```
 
----
+
 
 ## Real-World Examples:
 
@@ -107,7 +107,7 @@ class Client {
 
 - Factories produce game elements (UI, sprites, sounds) for platforms like PC, console, or mobile.
 
----
+
 
 ## Common Interview Questions on the Abstract Factory
 

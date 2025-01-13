@@ -2,14 +2,14 @@
 
 The Prototype pattern is a creational design pattern that allows objects to be cloned rather than created from scratch. It enables the creation of new objects by copying an existing object, known as the prototype.
 
----
+
 
 ### Intent
 
 - To reduce the cost of creating objects by cloning an existing object.
 - To simplify object creation when object initialization is expensive or complex.
 
----
+
 
 ### Key Components
 
@@ -83,7 +83,7 @@ console.log(clonedRectangle); // Rectangle with width 10 and height 20
    - Build a MapFeature prototype class with subtypes like Tree, Building, and Road.
    - Clone features to simulate placing multiple objects on a map.
 
----
+
 
 ## Scenarios
 

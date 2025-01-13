@@ -2,7 +2,7 @@
 
 The **Iterator Pattern** is a behavioral design pattern that provides a way to access elements of a collection (like lists, arrays, or custom data structures) sequentially, without exposing the underlying representation of the collection.
 
----
+
 
 ## Key Components
 
@@ -17,14 +17,14 @@ The **Iterator Pattern** is a behavioral design pattern that provides a way to a
 5. **Client**:
     - Uses the iterator to access elements of the collection sequentially.
 
----
+
 
 ## Intent
 
 - When you need to traverse a collection without knowing its internal structure.
 - When you want to provide multiple traversal strategies for a collection.
 
----
+
 
 ## Real-World Examples
 
@@ -35,7 +35,7 @@ The **Iterator Pattern** is a behavioral design pattern that provides a way to a
 3. **TV Remote:**
     Pressing the "Next Channel" button cycles through channels without knowing the internal order. 
 
----
+
 
 ## Software Scenario: Social Media Feed
 
@@ -109,7 +109,7 @@ Post 3: Design Patterns are awesome!
 
 ```
 
----
+
 
 ## Advantages
 

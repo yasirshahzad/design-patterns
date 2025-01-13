@@ -2,13 +2,13 @@
 
 In Object Oriented Programming, visitor pattern help to separates the algorithms from the objects on which they operate on, allowing to add new operations without modifying the object's structure.  
 
----
+
 
 ## **Intent**
 
 This pattern is ideal to use when you want to add new functionalities to objects without modifying their structure. It's particularly useful in scenarios where the object structure is stable, but new operations are frequently needed.
 
----
+
 
 ## **Key Components to Remember**
 
@@ -18,7 +18,7 @@ This pattern is ideal to use when you want to add new functionalities to objects
 4. **Concrete Element:** The actual objects that the visitor interacts with (e.g., Art, History, Science sections).
 5. **Accept Method:** Each element has an accept method that takes a visitor and lets it perform its operation. It uses ***Double Dispatch*** technique.
 
----
+
 
 ```ts
 // Visitor Interface
@@ -116,7 +116,7 @@ bird.accept(veterinarian); // Output: "Checking the bird's health."
 
 The visitor pattern introduces a visitor object that enables you to add new functionalities to the objects without modifying their structure. In real-world development, visitor pattern helps maintain the Open/Closed principle, enhancing the system's extensibility and maintainability.
 
----
+
 
 ### **Other things to Remember**
 

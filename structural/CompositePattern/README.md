@@ -4,7 +4,7 @@
 
 The **Composite Pattern** is a structural design pattern that allows you to compose objects into tree-like structures to represent part-whole hierarchies. It enables you to treat both individual objects and composite objects (collections of objects) in a uniform way.
 
----
+
 
 ### Intent
 
@@ -12,7 +12,7 @@ The **Composite Pattern** is a structural design pattern that allows you to comp
 - To allow clients to treat individual **objects and composite objects** uniformly.
 - To simplify the client code by ensuring the same interface is used for individual and composite objects.
 
----
+
 
 ### Key Components
 
@@ -22,7 +22,7 @@ The **Composite Pattern** is a structural design pattern that allows you to comp
 
 - **Composite:** A container object that holds other components (which could be either Leaf objects or other Composite `objects`). It implements the `Component` interface and typically has methods to add, remove, and retrieve child components.
 
----
+
 
 ### When to Use
 
@@ -74,7 +74,7 @@ folder.add(file2);
 console.log(`Total Size: ${folder.getSize()} bytes`); // Output: 30 bytes
 ```
 
----
+
 
 ### Real-World Applications
 

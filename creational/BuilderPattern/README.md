@@ -4,7 +4,7 @@ The **Builder Pattern** is like having a step-by-step recipe for creating someth
 
 The **Builder Pattern** is a creational design pattern that provides a way to construct complex objects step by step. It separates the construction process from the representation so the same construction process can create different representations.
 
----
+
 
 ## **Intent**
 
@@ -14,7 +14,7 @@ Sometimes, making a big or complex object (like a pizza, a car, or a house) has 
 - Reuse the same process to build different variations of the object. To allow a class to produce different types and representations of an object using the same building process.
 - Keep your code neat and organized.
 
----
+
 
 ## When to Use
 
@@ -24,7 +24,7 @@ Sometimes, making a big or complex object (like a pizza, a car, or a house) has 
 
 ## Components
 
----
+
 
 Here's how it works, step by step:
 
@@ -34,7 +34,7 @@ Here's how it works, step by step:
 - **Director:** This is like the "manager" who tells the builder which steps to follow and in what order.
 - **Client:** This is you! You just tell the manager (Director) what you want, and they handle everything else.
 
----
+
 
 ## Example Scenarios
 
@@ -42,7 +42,7 @@ Here's how it works, step by step:
 - **Car Builder:** Building different car models with customizable features (engine type, seats, color).
 - **Form Builder:** Dynamically building forms in a UI with various input fields.
 
----
+
 
 ## Code
 
@@ -130,7 +130,7 @@ const pepperoni = director.buildPepperoni();
 console.log(pepperoni.describe()); // Pizza with Thick crust, size Large, and toppings: Pepperoni, Cheese.
 ```
 
----
+
 
 ## Practice Task
 

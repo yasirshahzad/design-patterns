@@ -2,7 +2,7 @@
 
 The **Template Method** is a behavioral design pattern that defines the skeleton of an algorithm in a base class and allows derived classes to override specific steps of the algorithm without changing its structure.
 
----
+
 
 ## Key Components
 
@@ -122,7 +122,7 @@ Adding sugar and milk
 4. Hook Method:
     - `customerWantsCondiments` provides a way to modify the algorithm's behavior optionally.
 
----
+
 
 ## Benefits
 

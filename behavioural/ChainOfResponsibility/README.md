@@ -2,7 +2,7 @@
 
 The **Chain of Responsibility** is a behavioral design pattern that allows you to pass requests along a chain of handlers. Each handler in the chain processes the request or forwards it to the next handler until it's handled or the end of the chain is reached.
 
----
+
 
 ## Key Components
 
@@ -174,7 +174,7 @@ No handler could process the request.
 
 ```
 
----
+
 
 ## Intent
 
@@ -182,7 +182,7 @@ No handler could process the request.
 - To decouple the sender of a request from its potential receivers.
 - To dynamically configure the processing chain.
 
----
+
 
 ## Real-World Examples
 

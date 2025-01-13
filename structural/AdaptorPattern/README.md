@@ -4,14 +4,14 @@
 
 The Adapter Pattern is a structural design pattern used to bridge the gap between incompatible interfaces. It acts as a translator that makes one interface usable by another system or client.
 
----
+
 
 ### Intent
 
 - **Goal:** Convert the interface of one class into another interface expected by the client.
 - **Why?** To enable cooperation between classes that couldn’t otherwise work together due to incompatible interfaces.
 
----
+
 
 ### Components
 
@@ -23,7 +23,7 @@ The Adapter Pattern is a structural design pattern used to bridge the gap betwee
 
 4. **Client:** The entity that interacts with the target interface.
 
----
+
 
 ### When to Use
 
@@ -31,7 +31,7 @@ The Adapter Pattern is a structural design pattern used to bridge the gap betwee
 2. **Working with legacy code:** An old system's API doesn't match your new system's structure.
 3. **Changing interfaces:** Two modules need to work together but their interfaces don't match.
 
----
+
 
 ### Example Scenario
 
@@ -85,7 +85,7 @@ const logger: Logger = new LoggerAdapter();
 logger.logMessage("INFO", "Adapter Pattern Example Working!");
 ```
 
----
+
 
 ### Real-World Applications
 

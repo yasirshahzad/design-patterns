@@ -4,13 +4,13 @@
 
 The Bridge pattern is a structural design pattern that decouples an abstraction from its implementation so that the two can vary independently. It provides a way to split a class into two separate hierarchies: one for abstraction and another for implementation.
 
----
+
 
 ### Intent
 
 To avoid a permanent binding between an abstraction and its implementation and allow them to evolve independently without breaking the code.
 
----
+
 
 ### Key Components
 
@@ -19,7 +19,7 @@ To avoid a permanent binding between an abstraction and its implementation and a
 3. **Implementor (Interface):** Declares the methods that the Concrete Implementors must implement.
 4. **Concrete Implementor:** Provides a specific implementation of the Implementor interface.
 
----
+
 
 ### When to Use
 
@@ -27,7 +27,7 @@ To avoid a permanent binding between an abstraction and its implementation and a
 2. When both the abstraction and the implementation can have multiple variations, and you don't want an explosion of subclasses.
 3. When you need to switch implementations dynamically at runtime.
 
----
+
 
 ### Programming Example in TypeScript
 
@@ -141,7 +141,7 @@ advancedRemote.turnOff();
 2. **Dynamic Switching**
    Task: Modify the example so that you can switch between devices at runtime using the same remote control.
 
----
+
 
 ### Scenarios to Apply the Bridge Pattern
 
@@ -149,7 +149,7 @@ advancedRemote.turnOff();
 2. Payment Systems: Abstraction (Payment Processor) and Implementation (Stripe, PayPal).
 3. Document Management: Abstraction (Document Viewer) and Implementation (PDF, Word, Image viewers).
 
----
+
 
 ### Summary
 

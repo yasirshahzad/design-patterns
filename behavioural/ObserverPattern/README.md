@@ -4,7 +4,7 @@ Notifies multiple objects, or *subscribers* about any events that happen to the 
 
 The Observer Pattern defines a one-to-many dependency between objects, so when one object (the Subject) changes state, all its dependents (the Observers) are notified and updated automatically.
 
----
+
 
 ## **Key Components:**
 
@@ -13,7 +13,7 @@ The Observer Pattern defines a one-to-many dependency between objects, so when o
 3. **ConcreteSubject:** The implementation of the subject.
 4. **ConcreteObserver:** The implementation of the observer.
 
----
+
 
 ## **Intent:**
 
@@ -22,7 +22,7 @@ The Observer Pattern defines a one-to-many dependency between objects, so when o
 3. When one object's state changes and other objects need to be notified automatically.
 4. When the number of observers or the nature of their updates can vary dynamically.
 
----
+
 
 ## **Scenario: Weather Station System**
 

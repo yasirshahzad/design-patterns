@@ -4,7 +4,7 @@ The **Mediator Pattern** defines an object (called a Mediator) that encapsulates
 
 The Mediator Pattern is like a *central controller* that helps multiple components (or objects) communicate with each other without knowing about each other's details. This helps reduce the *complex web of connections* between components and makes the system more manageable.
 
----
+
 
 ## Key Components
 
@@ -12,7 +12,7 @@ The Mediator Pattern is like a *central controller* that helps multiple componen
 2. **Concrete Mediator:** The actual implementation of the mediator that handles communication.
 3. **Colleagues:** The components or objects that interact through the mediator.
 
----
+
 
 ## Intent
 
@@ -20,7 +20,7 @@ The Mediator Pattern is like a *central controller* that helps multiple componen
 2. When adding or changing communication logic between objects becomes difficult due to **tight coupling.**
 3. When you want to centralize and **simplify interactions** between component.
 
----
+
 
 ## Software Example: Chat Room
 
@@ -117,7 +117,7 @@ Charlie receives: Hi, Alice!
 - A game mediator manages interactions between players, enemies, and objects.
 - Example: Ensuring only one player holds a shared item at a time.
 
----
+
 
 ## Key Benefits
 

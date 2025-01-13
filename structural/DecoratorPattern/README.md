@@ -2,19 +2,19 @@
 
 The **Decorator Pattern** is a structural design pattern that allows you to dynamically add new behavior or functionality to an object without altering its structure or code. It involves wrapping an object in a chain of decorators, each adding its own unique behavior.
 
----
+
 
 ### Definition
 
 The decorator pattern provides a flexible way to extend an object's functionality by enclosing it in "decorator" objects, rather than modifying the original object's code.
 
----
+
 
 ### Intent
 
 The intent of the decorator pattern is to allow for adding additional responsibilities to objects at runtime in a flexible and reusable way.
 
----
+
 
 ### Key Components
 
@@ -26,7 +26,7 @@ The intent of the decorator pattern is to allow for adding additional responsibi
 
 4. **Concrete Decorators:** Subclasses of the decorator that add specific functionality to the component while preserving the existing structure.
 
----
+
 
 ### When to Use
 
@@ -34,7 +34,7 @@ The intent of the decorator pattern is to allow for adding additional responsibi
 2. When a static inheritance approach (subclassing) leads to a large number of subclasses for different behaviors.
 3. When you want to follow the Open-Closed Principle (open for extension, closed for modification).
 
----
+
 
 ### Code
 

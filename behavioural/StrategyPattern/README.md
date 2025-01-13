@@ -2,7 +2,7 @@
 
 The Strategy Pattern is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
----
+
 
 ## **Key Components:**
 
@@ -11,7 +11,7 @@ The Strategy Pattern is a behavioral design pattern that lets you define a famil
 3. **Concrete Strategies:** The implementations of the various algorithms.
 4. **Client:** Chooses and assigns a strategy to the context on runtime.
 
----
+
 
 ## **Intent:**
 

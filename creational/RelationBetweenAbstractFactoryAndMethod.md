@@ -2,7 +2,7 @@
 
 The **Abstract Factory** and **Factory Method** patterns are both creational design patterns aimed at abstracting the instantiation process, but they differ in scope and usage. Here's how they are related and how they differ:
 
----
+
 
 ## **Relation Between Abstract Factory and Factory Method**
 
@@ -14,19 +14,19 @@ The **Abstract Factory** and **Factory Method** patterns are both creational des
 2. **Both Abstract Instantiation Logic**
    - Both patterns aim to abstract object creation to promote loose coupling, ensuring that the client code does not need to know the specific classes of the objects being created.
 
----
+
 
 ## **Differences Between Abstract Factory and Factory Method**
 
 | Feature                | Abstract Factory                                                                  | Factory Method                                                     |
-| ---------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| - |  |  |
 | **Purpose**            | Creates families of related objects.                                              | Creates a single product at a time.                                |
 | **Scope**              | Works with multiple Factory Methods to produce a set of products.                 | Focuses on a single method to create a product.                    |
 | **Client Interaction** | The client interacts with a factory interface to get objects.                     | The client either extends or calls a Factory Method.               |
 | **Complexity**         | More complex as it involves multiple factories and product hierarchies.           | Simpler, focuses on a single product creation.                     |
 | **Example**            | A UI factory that creates buttons, textboxes, and dropdowns for a specific theme. | A logger factory that creates file-based or console-based loggers. |
 
----
+
 
 ## **When to Use Which?**
 
@@ -39,7 +39,7 @@ The **Abstract Factory** and **Factory Method** patterns are both creational des
   - You need to delegate the instantiation of a single object to subclasses.
   - The creation process involves some complex logic.
 
----
+
 
 ## **Example to Highlight the Relation**
 
@@ -119,7 +119,7 @@ renderUI(lightThemeFactory); // Renders light-themed UI
 renderUI(darkThemeFactory); // Renders dark-themed UI
 ```
 
----
+
 
 # Key Takeaways
 

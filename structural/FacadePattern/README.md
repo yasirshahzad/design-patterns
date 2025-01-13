@@ -4,14 +4,14 @@
 
 The Facade pattern provides a simplified interface to a complex subsystem, making it easier for clients to interact with it.
 
----
+
 
 ### Intent
 
 - Simplify the usage of complex subsystems by offering a unified and user-friendly interface.
 - Reduce coupling between clients and the subsystem by hiding implementation detail.
 
----
+
 
 ### Components
 
@@ -19,7 +19,7 @@ The Facade pattern provides a simplified interface to a complex subsystem, makin
 2. **Subsystem:** The complex internal components that the Facade hides.
 3. **Client:** The user of the Facade interface.
 
----
+
 
 ### When to Use
 
@@ -27,7 +27,7 @@ The Facade pattern provides a simplified interface to a complex subsystem, makin
 2. **Decoupling:** To reduce the dependency of the client on multiple subsystem classes.
 3. **Legacy Code:** When working with an old system, the Facade can wrap it, making it easier to interact with modern code.
 
----
+
 
 ### TypeScript Example Scenario:
 
