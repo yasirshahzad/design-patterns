@@ -98,6 +98,26 @@ These patterns focus on **how objects interact and communicate.** They define re
 
 9. **Iterator:** Provides a way to access elements of a collection sequentially without exposing its structure. For example, Browsing a playlist in a music app or viewing in Facebook feed. [Read more.](behavioural/IteratorPattern/README.md)
 
+## Key Differences Between Structural and Behavioral Design Patterns
+
+### Table 2
+
+| **Aspect**           | **Structural Patterns**                                | **Behavioral Patterns**                                |
+|-----------------------|------------------------------------------------------|-------------------------------------------------------|
+| **Primary Concern**  | Object and class composition                            | Object interactions and communication      |
+| **Focus**            | Structure and relationships                             | Responsibilities and algorithms            |
+| **Goal**             | Simplify complex structures                             | Simplify and manage object interactions    |
+| **Examples**         | Adapter, Composite, Facade, Decorator                   | Observer, Strategy, Command, State        |
+| **Analogy**          | Building blueprints                                     | Traffic rules                              |
+| **Role in Design**    | Define the physical architecture of a system.         | Define the dynamics of how objects interact.          |
+| **Inheritance Usage** | Focus on class composition and inheritance.           | Less dependent on inheritance; more on object collaboration. |
+| **Modularity**        | Break systems into smaller, reusable structures.      | Define reusable interaction logic for tasks.          |
+| **Change Impact**     | Changes are often limited to structural components.   | Changes can ripple through interaction chains.        |
+| **Flexibility**       | Provides flexibility in assembling objects.           | Provides flexibility in assigning responsibilities.    |
+| **Implementation**    | Concerned with implementing systems (static design).  | Concerned with system behaviors (runtime design).      |
+| **Typical Use Case**  | Used when extending or restructuring code.            | Used when defining workflows or communication patterns. |
+| **Complexity Focus**  | Simplifies system organization.                       | Simplifies communication and behavior logic.          |
+
 ## Summary of Categories
 
 1. **Creational:** Focuses on creating objects (what to make and how to make it).
