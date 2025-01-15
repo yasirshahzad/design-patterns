@@ -1,0 +1,19 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "**Design patterns** are tried and tested solutions to common problems in software design. They act like templates or guides to help developers solve issues they frequently face while writing code. Instead of figuring out everything from scratch, you can use a design pattern to handle common situations effectively. They are like blueprints that provide templates for solving specific design issues, making it easier for developers to write flexible, reusable, and maintainable code. Instead of reinventing the wheel, developers can apply design patterns to address common challenges effectively.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "node --experimental-strip-types index.ts", 
+    "watch": "nodemon index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
